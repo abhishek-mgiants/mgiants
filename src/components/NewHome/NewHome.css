@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-container{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.home-content-container{  
+  
+  display:grid;
+  grid-template-columns: 1fr 1fr; 
+}
+.item{
+    
+    width: 500px;
+    height: 500px;
+    color: azure;
+    
+}
+.hero-img{
+    background-image: url('src/assets/mascot.jpg');
+    background-position: center;
+    background-size: contain;  
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+}
+.icons{
+    
+}

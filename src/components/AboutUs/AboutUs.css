@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.about-content-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.item{
+    width: 300px;
+    height: 300px;
+}

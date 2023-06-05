@@ -1,0 +1,37 @@
+.digital-container{
+    background-image: url('src/assets/DigitalMarketingBg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    align-items: center;
+}
+.digital-content-container{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 600px;
+    height: 200px;
+    margin-top: 50px;
+    
+    margin-left: 10% ;
+}
+.digital-items{
+    
+    
+    text-align: left;
+    font-size: 1.1rem;
+}
+.heading{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: cyan;
+    
+}
+p{
+    text-align: left;
+}

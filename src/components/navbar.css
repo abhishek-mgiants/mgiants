@@ -1,0 +1,31 @@
+.navigation {
+    background-color: black;
+    margin-top: 40px;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+  text-decoration: none;
+  padding: 20px;
+  transition: box-shadow 0.6s;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 50px;
+  line-height: 20px;
+  background-color: black;
+  transition: all 0.9s;
+  border-radius: 25px;
+  }
+  
+  .nav-link:hover {
+    background-color: black;
+    box-shadow: 0 -10px  50px rgb(23, 180, 205);
+    
+  }
