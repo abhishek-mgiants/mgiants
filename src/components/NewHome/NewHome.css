@@ -8,20 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    border: 1px solid red;
+    height: 80vh;    
 }
 .home-content-container{  
-  border: 1px solid red;
   display:grid;
   grid-template-columns: 1fr 1fr; 
-}
-.item{
-    border: 1px solid red;
-    width: 500px;
-    height: 500px;
-    color: azure;
-    
 }
 .hero-img{
     background-image: url('src/assets/mascot.jpg');
@@ -29,44 +20,181 @@
     background-size: contain;  
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
-    border:  1px solid white;
-}
-.icons{
-    border: 1px solid red ;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr ;  
 }
 .icons.whtsap{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 55px;
+    height: 55px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+}
+.icons.whtsap:hover{
+  border: 5px solid #4dc247;
+  box-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
 }
 .fa-brands:hover{
     font-size: 40px;
+    padding: 10px 20px;
+    transition: transform 0.3s, font-size 0.3s;
+}
+.fa-linkedin:hover{
+  font-size: 30px;
   padding: 10px 20px;
   transition: transform 0.3s, font-size 0.3s;
- 
 }
-
+.fa-instagram{
+  font-size: 25px;
+}
+.fa-instagram:hover{
+  font-size: 28px;
+  padding: 10px 20px;
+  transition: transform 0.3s, font-size 0.3s;
+}
 .icons.seo{
     display: flex;
     justify-content: center;
     align-items: right;
 }
-.icons.web{
-  display: flex;
+.icons.linkedin{
+    display: flex;
     justify-content: center;
     align-items: right;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease; 
+    font-size: 25px;
 }
+.icons.insta{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease; 
+}
+.icons.seo{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease; 
+}
+.icons.seo:hover{
+  border: 5px solid #e9e516;
+  box-shadow: 0 0 15px #e9e516;
+  transition: all 0.5s ease;
+ }
+.icons.linkedin:hover{
+  border: 5px solid #4791c2;
+  box-shadow: 0 0 15px #4791c2;
+  transition: all 0.5s ease;
+ }
+ .icons.insta:hover{
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+ }
+.icons.web{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease; 
+    font-size: 30px;
+}
+.icons.web:hover{
+  border: 5px solid #33cc85;
+  box-shadow: 0 0 15px #33cc85 ;
+  transition: all 0.5s ease;
+}
+
 .fa-magnifying-glass-chart:hover{
     font-size: 30px;
-  padding: 8px 12px;
-  transition: transform 0.3s, font-size 0.3s;
- 
+    padding: 8px 12px;
+    transition: transform 0.3s, font-size 0.3s;
+}
+.fa-magnifying-glass-chart{
+  font-size: 25px;
 }
 .fa-solid:hover{
     font-size: 30px;
-  padding: 8px 12px;
-  transition: transform 0.3s, font-size 0.3s;
+    padding: 8px 12px;
+    transition: transform 0.3s, font-size 0.3s;
 }
-
+.content-item{
+  width: 500px;
+  height: 500px;
+  display:  grid;
+  grid-template-rows:1fr 1fr 1fr;  
+}
+.content-logo{
+  display:  flex;
+  justify-content: left;
+  align-items: center;
+  height: 100px;
+  margin-top: 100px;
+}
+.logoImg{
+  width: 280px;
+  height: 220px;
+}
+.content-heading{
+  text-align: left;
+  padding-left: 30px;
+  height: 100px;
+}
+.connect-button{
+  background-color: olive;
+  color: wheat;
+  width: 200px;
+  height: 40px;
+  margin-left: 30px;
+}
+.connectBtn{
+  padding-top: 0px;
+}
+.connect-button:hover{
+  background-color: white;
+  color: black;
+}
 

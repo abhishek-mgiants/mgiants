@@ -14,10 +14,14 @@ const Services2 = () => {
   ];
 
   const [selectedImage, setSelectedImage] = useState(servicesData[0]);
-
   const handleImageClick = (clickedImage) => {
-    setSelectedImage(clickedImage);
-
+    if (selectedImage.id === clickedImage.id) {
+      // Second click on the same image, route to the given path
+      navigate(clickedImage.path);
+    } else {
+      // First click, switch the image
+      setSelectedImage(clickedImage);
+    }
   };
 
   return (
