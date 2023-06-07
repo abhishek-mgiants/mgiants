@@ -12,16 +12,17 @@ import Srvcs from "./components/Services/Srvcs";
 import Aboutus from "./components/AboutUs/Aboutus";
 import Contactus from "./components/ContactUs/Contactus";
 import NewHome from "./components/NewHome/NewHome";
+import Services2 from "./components/Services/Services2";
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} /> 
+        <Route path="/" element={<NewHome/>} /> 
         <Route path="/aboutus" element={<Aboutus/>}/>  
         <Route path="/contact" element={<Contactus/>} />
-        <Route path="/services" element={<Srvcs/>} /> 
+        <Route path="/services" element={<Services2/>} /> 
         <Route path="/digitalmarketing" element={<DigitalMarketing/>} />
         <Route path="/branding" element={<Branding />} />
         <Route path="/appdevelopment" element={<AppDevelopment />} />
