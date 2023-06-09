@@ -15,6 +15,7 @@ import NewHome from "./components/NewHome/NewHome";
 import Services2 from "./components/Services/Services2";
 
 const App = () => {
+  
   return (
     <>
     <BrowserRouter>
@@ -29,10 +30,9 @@ const App = () => {
         <Route path="/webdevelopment" element={<WebDevelopment />} />
         <Route path="/graphicdesign" element={<GraphicDesign/>} />
       </Routes>
-        <NavBar />  
+        <NavBar/>
       </BrowserRouter>   
   </>
   )
 }
-
 export default App

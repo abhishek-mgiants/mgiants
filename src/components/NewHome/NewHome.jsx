@@ -1,6 +1,14 @@
 import './NewHome.css'
+import { useNavigate } from 'react-router-dom';
+import { motion } from "framer-motion";
+
 const NewHome = () => {
+  const connectNavigate= useNavigate();
+ function handlerConnectClick(){
+    connectNavigate('/aboutus')
+ }
   return (
+    
     <div className="home-container">
     <div className="home-content-container">
               <div className="item hero-img">
@@ -59,7 +67,7 @@ const NewHome = () => {
                   </h2>
                 </div>
                 <div className="connectBtn">
-                <button className="connect-button">
+                <button onClick={handlerConnectClick} className="connect-button">
                      Lets Connect
                   </button> 
                 </div>
