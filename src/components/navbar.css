@@ -6,7 +6,7 @@
   .navigation ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px;
   }
   

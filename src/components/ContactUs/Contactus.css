@@ -11,18 +11,30 @@
     align-items: center;
     height: 80vh;
 }
+
 .contact-content-container{  
   display:grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
+  
 }
 .heading{
     color: cyan;
     font-size: 32px;
+    
 }
 .item{
     width: 500px;
     height: 500px;
     color: azure;   
+}
+.contact-form-container{
+  
+  margin-left: 100px;
+}
+.contact-img-container{
+  
+  width: 700px;
+  
 }
 .contact-form{
     display: flex;
@@ -33,7 +45,8 @@ background-color: black;
 border: none;
   border-bottom: 1px solid white;
 padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px ;
+  width: 350px;
 }
 input[type=email]{
     background-color: black;

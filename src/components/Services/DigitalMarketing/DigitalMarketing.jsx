@@ -47,7 +47,7 @@ const DigitalMarketing = () => {
               { id: 1, title: 'Pay-per-Click Advertising', description: 'Paying for ads based on clicks received' },
               { id: 2, title: 'Display Advertising', description: 'Promoting products or services through visual ads' },
               // Add more objects as needed
-            ])}
+            ])} 
           >
             Paid Marketing
           </div>

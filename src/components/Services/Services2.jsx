@@ -28,8 +28,6 @@ const Services2 = () => {
   const otherImages = idArray.slice(1).map((id) => servicesData.find((image) => image.id === id));
 
   const handleMainImageClick = () => {
-    // Perform navigation when the main image is clicked
-    // using the selectedImage's path
     const selectedImage = servicesData.find((image) => image.id === topId);
     if (selectedImage) {
       window.location.href = selectedImage.path;
@@ -38,7 +36,7 @@ const Services2 = () => {
 
   return (
     <div className="services-container">
-      <div className="main-service-container">
+      <div className="main-service-container"> 
         <motion.div
           className="main-service-img"
           initial={{ x: '100%' }}
@@ -74,6 +72,9 @@ const Services2 = () => {
             whileTap={{ scale: 0.9 }}
             onClick={() => handleImageClick(image.id)}
           >
+            <div className="image-overlay">
+              <p className="image-name">{image.name}</p>
+            </div>
             <motion.img
               className="services-items"
               key={image.id}
