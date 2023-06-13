@@ -35,7 +35,9 @@ const Services2 = () => {
   };
 
   return (
+
     <div className="services-container">
+      
       <div className="main-service-container"> 
         <motion.div
           className="main-service-img"

@@ -6,3 +6,8 @@
 body{
     background-color: black;
 }
+.scroll-container {
+    height: 100vh; /* Set the desired height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }

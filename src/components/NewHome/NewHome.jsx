@@ -1,12 +1,9 @@
 import './NewHome.css'
-import { useNavigate } from 'react-router-dom';
-import { motion } from "framer-motion";
 
 const NewHome = () => {
-  const connectNavigate= useNavigate();
- function handlerConnectClick(){
-    connectNavigate('/aboutus')
- }
+  function handlerConnectClick() {
+    window.location.href = '/aboutus';
+  }
   return (
     
     <div className="home-container">
@@ -22,12 +19,12 @@ const NewHome = () => {
                   <div className="icons"></div>
                   <div className="icons"></div>
                   <div className="icons"></div>
-
+                  
                   <div className="icons whtsap">
                     <button><i className="fa-brands fa-whatsapp fa-2xl"></i></button>
                   </div> 
                   <div className="icons linkedin">
-                    <button ><i class="fa-brands fa-linkedin "></i></button>
+                    <button ><i class="fa-brands fa-linkedin"></i></button>
                   </div>
 
                   <div className="icons"></div>
@@ -52,15 +49,15 @@ const NewHome = () => {
                 </div>
                 <div className="content-heading">
                 <h2 className="text-5xl text-cyan-500 ">
-            We Strategies and create <br/> the most innovative solutions
+                    We Strategies and create <br/>
+                    the most innovative solutions
                   </h2>
                 </div>
                 <div className="connectBtn">
                 <button onClick={handlerConnectClick} className="connect-button">
                      Lets Connect
                   </button> 
-                </div>
-                  
+                </div>  
               </div>
     </div>
     </div>
